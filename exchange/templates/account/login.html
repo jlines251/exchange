@@ -30,7 +30,7 @@
 {% else %}
 <div class="page-header">
     <h2>{% trans "Log in or sign up for a new account" %}</h2>
-	<p>Please log in or create a new account to use PPACG&apos;s interactive web mapping program. 
+	<p>Please log in using Facebook or Google or create a new account to use PPACG&apos;s interactive web mapping program. 
 	By creating an account you help us ensure that the comments we receive are valid (not spam!)
 	and that you stay up to date on activities related to our 2045 long range transportation plan. 
 	Thanks in advance for your comment(s). We appreciate your feedback!</p>
@@ -68,7 +68,7 @@
         </a>
         {% endif %}
         {% if ENABLE_GOOGLE_LOGIN %}
-        <a class="btn-google btn-social btn bg-ms btn-block" href="{% url 'social:begin' 'google-oauth2' %}?{{ redirect_field_name }}={{ redirect_field_value }}">
+        <a class="btn-google btn-social btn bg-ms btn-block" href="{% url 'social:begin' 'google-oauth2' %}?{{ redirect_field_name }}={{ redirect_field_value }}" style="margin-bottom:9px;">
             <i class="fa fa-google"></i> Log In with Google
         </a>
         {% endif %}
@@ -77,7 +77,7 @@
             <i class="fa fa-lock"></i> Log In with GeoAxis
         </a>
         {% endif %}
-		<p><a class= "form-group" href="https://mapping.ppacg.org/account/signup/">{% trans "New user registration" %}</a></p>
+		<p><a class= "form-group" href="https://mapping.ppacg.org/account/signup/" style="font-size: 20px;font-weight: 700;" >{% trans "Register with email" %}</a></p>
     </div>
     {% endif %}
 </div>
