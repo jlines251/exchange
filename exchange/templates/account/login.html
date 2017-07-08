@@ -54,7 +54,7 @@
 
     {% if ENABLE_SOCIAL_LOGIN %}
 
-    <div class="col-md-4" style="float:right;">
+    <div class="col-md-4" style="float:right;margin-top: 25px;">
 
         {% if ENABLE_AUTH0_LOGIN %}
         <a class="btn-auth0 btn-social btn bg-ms btn-block" href="{% url 'social:begin' 'auth0' %}?{{ redirect_field_name }}={{ redirect_field_value }}">
