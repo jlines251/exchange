@@ -65,7 +65,6 @@
                   <li role="separator" class="divider"></li>
                   <li><a href="{% url "layer_upload" %}">Upload Layer</a></li>
                   <li><a href="{% url "document_upload" %}">Upload Document</a></li>
-                  {% endif %}
                 </ul>
               </li>
               <li id="nav_maps">
@@ -122,7 +121,6 @@
                     {% if user.is_superuser %}
                     <li><a href="{{ user.get_absolute_url }}">{% trans "Profile" %}</a></li>
                     <li><a href="{% url "recent-activity" %}">{% trans "Recent Activity" %}</a></li>
-                    <li><a href="{% url "messages_inbox" %}">{% trans "Inbox" %}</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="{% url "csw-record-list" %}">Registry</a></li>
                     <li><a href="{% url "admin:index" %}">Admin</a></li>
